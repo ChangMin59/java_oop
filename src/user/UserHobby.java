@@ -24,4 +24,10 @@ public class UserHobby extends User {
     public void addHobby(String hobby){
         this.hobbies.add(hobby);
     }
+
+    @Override
+    public String getName(){
+        // Sring.join("문자", List) -> 리스트를 반복돌며 "문자"로 연결해 하나의 문자열 반환
+        return super.getName()+"["+String.join(",",hobbies)+"]";
+    }
 }

@@ -25,9 +25,8 @@ public class Main {
 
         //UserHobby 확장 클래스의 세번째 인자값으로 취미 리스트 전달
         UserHobby user2 = new UserHobby("Emily", "emily@naver.com", hobbies);
-
-        //UserHobby확장 클래스 생성된 인스턴스의 취미 정보 확인
-        System.out.println(user2.getHobbies());
+        String userNameWidthHobbies = user2.getName();
+        System.out.println(userNameWidthHobbies);
 
     }
 }
