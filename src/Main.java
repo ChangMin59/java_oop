@@ -1,16 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        User user1 = new User();
-        //System.out.println(user1.name); //직접적인 접근 불가
+        //CRUD (데이터 생성, 호출, 수정, 삭제)
+        //클래스를 통해 초기 인스턴스 생성 (Create: 데이터 생성)
+        User user1 = new User("David", "abc@naver.com");
 
+        //인스턴스의 정보값을 변경 (Update: 데이터 수정)
+        user1.setName("Andy");
 
-        //setter메서드로 내부 정보 변경처리
-        user1.setAge(21);
+        //변경된 인스턴스 정보값 호출 및 출력 (Read: 데이터 호출)
+        String userName = user1.getName();
+        System.out.println(userName);
 
-        //변경된 값을 getter메서드로 가져옴
-        int userAge = user1.getAge();
-        System.out.println(userAge);
-
-        //getter, setter를 통해서 사전에 약속된 방식으로만 중요한 정보값 변경처리
     }
 }
