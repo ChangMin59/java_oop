@@ -1,6 +1,6 @@
 package user;
 
-public class User {
+public class User implements IUser{
 
     //맴버변수는 정보의 틀구조 생성
     private String userid;
@@ -14,6 +14,9 @@ public class User {
     }
 
     //getter : 이미 생성된 인스턴스에 접근해서 해당 정보값 확인
+
+    //getter: 이미 생성된 인스턴스 정보를 변경처리 하지 않고 값을 확인처리
+    //setter: 이미 생성된 인스턴스 정보를 어떤식으로든 변경처리
     public String getName(){
         return this.userid;
 

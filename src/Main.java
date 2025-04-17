@@ -27,6 +27,16 @@ public class Main {
         UserHobby user2 = new UserHobby("Emily", "emily@naver.com", hobbies);
         String userNameWidthHobbies = user2.getName();
         System.out.println(userNameWidthHobbies);
-
     }
 }
+
+
+/*
+    객체지향
+    - 대단위 프로젝트에서 동일한 품질의 객체(인스턴스)를 대량 생상하기위한 시스템적인 틀
+    - instance : 동일한 구조의 객체 (예시 :개별적인 게시글 /강제된 개별적 게시글 데이터 형식)
+    - class : 인스턴스 생성하는 시스템적인 틀
+    - interface : 클래스의 형식을 강제하는 설계서 (인터페이스에 기술된 메서드가 실 클래스에 없으면 에러 발생)
+    - extends : 기존 클래스에 새로운 확장 클래스 연결
+    - override : 기존 클래스의 특정 메서드를 덮어쓰기
+*/
