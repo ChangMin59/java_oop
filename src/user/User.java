@@ -1,3 +1,5 @@
+package user;
+
 public class User {
 
     //맴버변수는 정보의 틀구조 생성

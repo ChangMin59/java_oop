@@ -1,3 +1,5 @@
+import user.User;
+
 public class Main {
     public static void main(String[] args) {
         //CRUD (데이터 생성, 호출, 수정, 삭제)
